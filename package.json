@@ -1,0 +1,16 @@
+{
+  "name": "unofficial-medium-api",
+  "version": "0.0.1",
+  "description": "Unofficial medium.com API using Puppeteer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-with-devtools": "ENABLE_DEVTOOLS=true jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "puppeteer": "^1.12.2"
+  }
+}
