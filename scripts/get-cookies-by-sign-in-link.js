@@ -1,3 +1,9 @@
+/**
+ * Get authenticated cookies by a sing in link
+ *
+ * Usage: node get-cookies-by-sign-in-link.js 'login_link_here'
+ */
+
 const MediumAccountConnect = require('../lib/MediumAccountConnect')
 
 const puppeteer = require('puppeteer')
