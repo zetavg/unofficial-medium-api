@@ -12,5 +12,8 @@
   "devDependencies": {
     "jest": "^24.1.0",
     "puppeteer": "^1.12.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.3.0"
   }
 }
