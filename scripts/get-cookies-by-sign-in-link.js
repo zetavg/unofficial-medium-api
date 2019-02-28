@@ -19,9 +19,9 @@ const exec = async () => {
   const browser = await puppeteer.launch({ devtools: !!process.env.ENABLE_DEVTOOLS })
   const mediumAccountConnect = new MediumAccountConnect({ browser, signInLink })
   const cookies = await mediumAccountConnect.getCookies()
-  const isAuthorized = await mediumAccountConnect.isAuthorized()
+  const isAuthenticated = await mediumAccountConnect.isAuthenticated()
 
-  if (!isAuthorized) {
+  if (!isAuthenticated) {
     console.error('Error: The sign in link does not work!')
     throw new Error()
   }
